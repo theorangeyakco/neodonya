@@ -1,4 +1,4 @@
-import Background from "../components/background";
+import Background from "../components/Background";
 import Blogs from "../components/Blogs";
 import Capabilities from "../components/Capabilities";
 import FAQs from "../components/FAQs";
