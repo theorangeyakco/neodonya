@@ -1,0 +1,86 @@
+.soln_wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 8rem 5rem 0 5rem;
+  width: 100vw;
+  margin-bottom: 16rem;
+}
+
+.bg {
+  top: 0;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: max-content;
+}
+
+.purple {
+  right: 10rem;
+  position: absolute;
+  top: 5rem;
+  height: 100%;
+}
+
+.title {
+  position: relative;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.soln_form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: max-content;
+}
+
+.text_wrapper {
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  padding: 0;
+  width: max-content;
+  height: 2rem;
+}
+
+.text_input,
+.text_shadow {
+  position: absolute;
+  border: none;
+  top: 0;
+  left: 0;
+  background: var(--color-white);
+  width: 40vw;
+  height: 2rem;
+}
+
+.text_shadow {
+  top: 5px;
+  left: 5px;
+  opacity: 0.3;
+}
+
+.text_input:focus,
+.text_input:focus + .text_shadow {
+  top: 2px;
+  left: 2px;
+  transition: all 0.3s;
+}
+
+.text_input,
+.text_shadow {
+  padding: 0.5rem 1rem;
+  font-size: 1.02rem;
+  color: var(--color-black);
+  font-weight: 600;
+  outline: none;
+  appearance: none;
+  resize: none;
+}
+
+.soln_form button {
+  width: max-content;
+  transform: translateY(8rem);
+}

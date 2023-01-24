@@ -1,0 +1,123 @@
+.arrow_wrapper {
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 3rem;
+  margin-top: 100vh;
+}
+
+.arrows {
+  background-image: url(../public/intro/arrows.png);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: top;
+  background-size: cover;
+
+  margin: -3rem;
+  width: 40%;
+  height: 24rem;
+}
+
+.arrows_text {
+  font-weight: 700;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.arrows_text span {
+  color: var(--color-black);
+}
+
+.grad {
+  background: linear-gradient(
+    180deg,
+    #bf0aff 14.58%,
+    #ff53b7 52.36%,
+    #1d26ff 89.06%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text {
+  width: max-content;
+}
+
+.plain {
+  background: linear-gradient(180deg, #1d26ff 14.58%, #bf0aff 92.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 1500px) {
+  .arrows_text {
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .arrows_text {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .arrows {
+    width: 50%;
+    margin: -6rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .arrow_wrapper {
+    margin-top: 40vh;
+  }
+
+  .arrows {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .arrows {
+    display: none;
+  }
+
+  .arrow_wrapper {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .arrows_text {
+    font-size: 1.6rem;
+  }
+
+  .text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .arrow_wrapper {
+    margin-top: 35vh;
+  }
+
+  .arrows_text {
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .arrow_wrapper {
+    margin-top: 30vh;
+  }
+
+  .arrows_text {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,37 @@
+.blog_wrapper {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-black);
+  padding: 3rem;
+  gap: 1rem;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.blog_title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem 0 0.4rem 0;
+}
+
+.blog_body {
+  font-size: 0.9rem;
+}
+
+.blog_img {
+  width: 100%;
+}
