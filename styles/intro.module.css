@@ -91,6 +91,7 @@
   }
 
   .arrows_text {
+    margin-top: 2rem;
     font-size: 1.6rem;
   }
 
@@ -106,7 +107,7 @@
   }
 
   .arrows_text {
-    margin-top: 0.8rem;
+    margin-top: 1.5rem;
     font-size: 1.2rem;
   }
 }

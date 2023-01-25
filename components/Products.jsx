@@ -32,10 +32,7 @@ const Product = () => {
           </div>
         </div>
 
-        <div
-          className={styles.product}
-          style={{ flexDirection: "row-reverse" }}
-        >
+        <div className={styles.product}>
           <img className={styles.product_img} src="products/prod2.png" />
 
           <div className={styles.product_text}>

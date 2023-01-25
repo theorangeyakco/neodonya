@@ -62,13 +62,6 @@
   color: var(--color-black);
 }
 
-.footer_middle a:hover {
-  cursor: pointer;
-  background: linear-gradient(86.63deg, #bf0aff, #940bff 52.43%, #1d26ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .footer_bottom {
   background: var(--color-black);
   color: var(--color-white);
@@ -80,13 +73,15 @@
   justify-content: space-between;
 }
 
-.footer_bottom a {
+.bottom_left a {
   color: var(--color-white);
   text-decoration: underline;
   font-weight: 600;
 }
 
-.footer_bottom a:hover {
+.bottom_left a:hover,
+.footer_middle a:hover {
+  cursor: pointer;
   text-decoration: none;
   background: linear-gradient(86.63deg, #bf0aff, #940bff 52.43%, #1d26ff);
   -webkit-background-clip: text;
