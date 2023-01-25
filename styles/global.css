@@ -18,18 +18,6 @@ body {
 }
 
 :root {
-  /* font sizes */
-  --font-size-sm: 20px;
-  --font-size-base: 24px;
-  --font-size-lg: 26px;
-  --font-size-xl: 28px;
-  --font-size-2xl: 32px;
-  --font-size-3xl: 36px;
-  --font-size-4xl: 42px;
-  --font-size-5xl: 48px;
-  --font-size-6xl: 64px;
-  --font-size-7xl: 150px;
-  /* Colors */
   --color-white: #fff;
   --color-black: #000;
   --color-pink-100: #f4d6ff;
@@ -68,4 +56,11 @@ body {
 #t2 {
   padding: 1rem;
   height: 10rem;
+}
+
+@media screen and (min-width: 1900px) {
+  #t1,
+  #t2 {
+    height: 15rem;
+  }
 }
