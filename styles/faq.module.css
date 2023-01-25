@@ -2,8 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 8rem 5rem;
+  gap: 2rem;
+  padding: 15rem 5rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -20,14 +20,14 @@
 .faqs {
   position: relative;
   width: calc(100vw - 10rem);
-  gap: 1rem;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .title {
   position: relative;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 2rem;
 }
 
@@ -43,11 +43,13 @@
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: -1rem;
+  cursor: pointer;
 }
 
 .faq_body {
   padding: 1rem;
   background-color: rgba(256, 256, 256, 0.2);
+  transition: height 3s;
 }
 
 .open {
@@ -62,4 +64,123 @@
 .question {
   margin-top: 5px;
   font-size: 1.2rem;
+}
+
+.yes {
+  opacity: 1;
+  height: max-content;
+  animation: appear 0.6s;
+}
+
+.no {
+  opacity: 0;
+  padding: 0;
+  height: 0;
+  animation: disappear 0.6s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .title {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .question {
+    font-size: 1.4rem;
+  }
+
+  .faqs {
+    gap: 3rem;
+    min-height: 700px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .faq_wrapper {
+    padding: 10rem 5rem;
+  }
+
+  .faqs {
+    min-height: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .faq_wrapper {
+    padding: 6rem 3rem;
+  }
+
+  .faqs {
+    width: calc(100vw - 6rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .question {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .faqs,
+  .faq_wrapper {
+    gap: 1rem;
+  }
+
+  .faq {
+    padding-bottom: 0rem;
+  }
+
+  .faq_wrapper {
+    padding: 4rem 1rem;
+  }
+
+  .faqs {
+    width: calc(100vw - 2rem);
+  }
+
+  .question {
+    font-size: 1rem;
+  }
 }
