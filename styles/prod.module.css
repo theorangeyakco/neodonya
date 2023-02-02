@@ -82,16 +82,16 @@
 }
 
 @media screen and (min-width: 1500px) {
+  .prod_wrapper {
+    padding: 3rem 10rem;
+  }
+
   .title {
     font-size: 2.4rem;
   }
 
   .product_text {
     padding: 1.4rem 0;
-  }
-
-  .product_img {
-    width: 45vw;
   }
 
   .tags {

@@ -4,34 +4,34 @@ import styles from "../styles/cap.module.css";
 const STORE = [
   {
     image: "capabilities/car1.png",
-    title: "Metaverse Solutions 1",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt facilis quisquam nulla natus minus labore molestiae sunt esse quidem molestias, deleniti sint nostrum a dolor magnam tenetur. Cum velit odio exercitationem quis quod, laudantium ex dolores culpa aliquid soluta?",
+    title: "Virtual Worlds",
+    body: "Our company specializes in creating immersive virtual worlds for businesses, allowing for remote collaboration and communication.",
   },
   {
     image: "capabilities/car2.png",
-    title: "Metaverse Solutions 2",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt facilis quisquam nulla natus minus labore molestiae sunt esse quidem molestias, deleniti sint nostrum a dolor magnam tenetur. Cum velit odio exercitationem quis quod, laudantium ex dolores culpa aliquid soluta?",
+    title: "Game-based Learning",
+    body: "Our platform uses game-based learning techniques to make training and education more engaging and effective.",
   },
   {
     image: "capabilities/car3.png",
-    title: "Metaverse Solutions 3",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt facilis quisquam nulla natus minus labore molestiae sunt esse quidem molestias, deleniti sint nostrum a dolor magnam tenetur. Cum velit odio exercitationem quis quod, laudantium ex dolores culpa aliquid soluta?",
+    title: "Digital Twins",
+    body: "Our digital twin technology allows businesses to create virtual copies of their physical assets for remote monitoring and management",
   },
 
   {
     image: "capabilities/car1.png",
-    title: "Metaverse Solutions 4",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt facilis quisquam nulla natus minus labore molestiae sunt esse quidem molestias, deleniti sint nostrum a dolor magnam tenetur. Cum velit odio exercitationem quis quod, laudantium ex dolores culpa aliquid soluta?",
+    title: "AI - GPT3 integration",
+    body: "Our AI integration with GPT-3 allows for natural language processing and advanced chatbot capabilities",
   },
   {
     image: "capabilities/car2.png",
-    title: "Metaverse Solutions 5",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt facilis quisquam nulla natus minus labore molestiae sunt esse quidem molestias, deleniti sint nostrum a dolor magnam tenetur. Cum velit odio exercitationem quis quod, laudantium ex dolores culpa aliquid soluta?",
+    title: "AR/VR",
+    body: "Our expertise in AR and VR technology allows for enhanced visualization and engagement in virtual environments",
   },
   {
     image: "capabilities/car3.png",
-    title: "Metaverse Solutions 6",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt facilis quisquam nulla natus minus labore molestiae sunt esse quidem molestias, deleniti sint nostrum a dolor magnam tenetur. Cum velit odio exercitationem quis quod, laudantium ex dolores culpa aliquid soluta?",
+    title: "Lifelike Avatars",
+    body: "Our avatars are highly customizable and realistic, allowing for seamless communication and interaction in virtual worlds",
   },
 ];
 

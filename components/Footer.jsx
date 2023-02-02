@@ -15,9 +15,15 @@ const Footer = () => {
         </div>
 
         <div className={styles.logos}>
-          <img className={styles.logo} src="footer/insta.svg" />
-          <img className={styles.logo} src="footer/linkedin.svg" />
-          <img className={styles.logo} src="footer/twitter.svg" />
+          <a href="/">
+            <img className={styles.logo} src="footer/insta.svg" />
+          </a>
+          <a href="https://www.linkedin.com/company/neodonya/">
+            <img className={styles.logo} src="footer/linkedin.svg" />
+          </a>
+          <a href="/">
+            <img className={styles.logo} src="footer/twitter.svg" />
+          </a>
         </div>
       </div>
 
@@ -26,15 +32,20 @@ const Footer = () => {
           <div className={styles.title}>Company</div>
           <div className={styles.point}>
             <img src="footer/map.svg" />
-            <a href="/">HSR Layout, Bengaluru, Karnataka</a>
+            <a href="https://goo.gl/maps/soGTCAwvss714mCJ6">
+              Workafella Alwarpet, 37, TT Krishnamachari Rd <br /> CIT Colony,
+              Alwarpet, Chennai, Tamil Nadu - 600018
+            </a>
           </div>
           <div className={styles.point}>
             <img src="footer/mail.svg" />
-            <a href="/">contact@neodonya.com</a>
+            <a href="mailto:partnerships@xplorro.com">
+              partnerships@xplorro.com
+            </a>
           </div>
           <div className={styles.point}>
             <img src="footer/phone.svg" />
-            <a href="/">+91 99102 31328</a>
+            <a href="tel:9840429071">+91 98404 29071</a>
           </div>
         </div>
 

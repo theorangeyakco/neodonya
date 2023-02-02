@@ -89,6 +89,11 @@
     font-size: 1.8rem;
   }
 
+
+  .card_body{
+    font-size: 1.1rem;
+  }
+
   .right {
     right: -30px;
     scale: 1.2;
