@@ -4,6 +4,7 @@
   color: var(--color-black);
   padding: 3rem;
   gap: 1rem;
+  margin: 1.5rem 0;
 }
 
 .blogs {
@@ -20,6 +21,12 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  color: black;
+}
+
+.blog:hover {
+  color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
 }
 
 .blog_title {
@@ -41,10 +48,10 @@
     font-size: 2.4rem;
   }
 
-  .blog_wrapper{
+  .blog_wrapper {
     padding: 2rem 10rem;
   }
-  
+
   .blog_title {
     font-size: 1.65rem;
   }

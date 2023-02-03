@@ -116,17 +116,22 @@
 }
 
 @media screen and (min-width: 1800px) {
-  .product_text{
+  .prod_wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .product_text {
     transform: translateY(1rem);
   }
 
-  .head{
+  .head {
     font-size: 1.7rem;
   }
 
-.body{
-  font-size: 1.1rem;
-}
+  .body {
+    font-size: 1.1rem;
+  }
 
   .product_img {
     width: 40vw;
