@@ -73,7 +73,7 @@ const FAQs = () => {
 
     for (let i = 0; i < STORE.length; i++) {
       TEMP_OPEN[i] = true;
-      TEMP_DISP[i] = styles.faq_body;
+      TEMP_DISP[i] = `${styles.faq_body} ${styles.yes}`;
 
       TEMP_FAQS.push(
         <div key={i} onClick={() => toggle(i)} className={styles.faq}>

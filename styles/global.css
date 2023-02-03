@@ -64,3 +64,10 @@ body {
     height: 15rem;
   }
 }
+
+@media screen and (max-width: 380px) {
+  #t1,
+  #t2 {
+    margin: -0.5rem 0 0 -1rem;
+  }
+}
