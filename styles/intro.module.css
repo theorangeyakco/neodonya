@@ -31,25 +31,14 @@
   color: var(--color-black);
 }
 
-.grad {
-  background: linear-gradient(
-    180deg,
-    #bf0aff 14.58%,
-    #ff53b7 52.36%,
-    #1d26ff 89.06%
-  );
+.gradient {
+  background: linear-gradient(86.63deg, #bf0aff, #940bff 92.43%, #1d26ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text {
   width: max-content;
-}
-
-.plain {
-  background: linear-gradient(180deg, #1d26ff 14.58%, #bf0aff 92.06%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (min-width: 1500px) {

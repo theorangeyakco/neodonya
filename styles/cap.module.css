@@ -54,8 +54,8 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  color: white;
-  background-color: black;
+  color: var(--color-white);
+  background-color: var(--color-black);
   border: none;
   cursor: pointer;
   top: 30%;
@@ -90,6 +90,8 @@
 
   .card_body {
     font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
   }
 
   .right {
@@ -106,6 +108,13 @@
 @media screen and (min-width: 1700px) {
   .carousel {
     gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .card_body {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
   }
 }
 

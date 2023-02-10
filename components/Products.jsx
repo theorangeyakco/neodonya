@@ -3,7 +3,8 @@ import styles from "../styles/prod.module.css";
 
 const PRODUCTS = [
   {
-    image: "https://images.unsplash.com/photo-1554474051-0256b98c36f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+    image:
+      "https://images.unsplash.com/photo-1554474051-0256b98c36f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
     tag1: "#corporatetraining",
     tag2: "#metaversetraining",
     title: "Corporate Training",
@@ -68,7 +69,7 @@ const PRODUCTS = [
 ];
 
 const Product = () => {
-  const [products, setProducts] = useState(null);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     setProducts(

@@ -7,19 +7,19 @@ const Introduction = () => {
       <div className={styles.arrows_text}>
         <p className={styles.text}>
           <span>I am a </span>
-          <span className={styles.grad}>HR Manager</span>
+          <span className={styles.gradient}>HR Manager</span>
           <span> at</span>
         </p>
 
         <p className={styles.text}>
           <span>a </span>
-          <span className={styles.grad}>Software</span>
+          <span className={styles.gradient}>Software</span>
           <span> firm. Neodonya can</span>
         </p>
 
         <p className={styles.text}>
           <span>help bring attrition down by </span>
-          <span className={styles.plain}>20%.</span>
+          <span className={styles.gradient}>20%.</span>
         </p>
       </div>
 
