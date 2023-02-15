@@ -59,10 +59,6 @@
 }
 
 @media screen and (max-width: 900px) {
-  .arrow_wrapper {
-    margin-top: 40vh;
-  }
-
   .arrows {
     width: 45%;
   }
@@ -90,10 +86,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  .arrow_wrapper {
-    margin-top: 35vh;
-  }
-
   .arrows_text {
     margin-top: 1.5rem;
     font-size: 1.2rem;
@@ -101,10 +93,6 @@
 }
 
 @media screen and (max-width: 380px) {
-  .arrow_wrapper {
-    margin-top: 30vh;
-  }
-
   .arrows_text {
     margin-top: 1rem;
     font-size: 1rem;

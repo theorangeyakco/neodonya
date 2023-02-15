@@ -88,7 +88,8 @@
 
 @media screen and (max-width: 900px) {
   .landing_bg {
-    height: 40vh;
+    width: 100vw;
+    min-height: 0;
   }
 
   .top_flex {
@@ -103,10 +104,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  .landing_bg {
-    height: 35vh;
-  }
-
   .top_flex {
     padding: 0.4rem;
     width: calc(100vw - 1rem);
@@ -119,10 +116,6 @@
 }
 
 @media screen and (max-width: 380px) {
-  .landing_bg {
-    height: 30vh;
-  }
-
   .top_flex {
     padding: 0.4rem 0;
     width: calc(100vw);
