@@ -3,64 +3,56 @@ import styles from "../styles/prod.module.css";
 
 const PRODUCTS = [
   {
-    image:
-      "https://images.unsplash.com/photo-1554474051-0256b98c36f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+    image: "products/ctr.png",
     tag1: "#corporatetraining",
     tag2: "#metaversetraining",
     title: "Corporate Training",
     body: "Our training platform allows for immersive and realistic training, improving employee skills, productivity and knowledge retention across various industries and sectors.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1626379953822-baec19c3accd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    image: "products/whs.png",
     tag1: "#warehousetraining",
     tag2: "#virtualrealitytraining",
     title: "Warehouse Training",
     body: "Our virtual reality-based training platform allows for immersive and realistic training for warehouse operations, improving efficiency and safety.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1653158861306-e5b3804f6115?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    image: "products/eob.png",
     tag1: "#employeeonboarding",
     tag2: "#virtualonboarding",
     title: "Employee Onboaring",
     body: "Our virtual onboarding program allows new employees to quickly familiarize themselves with company policies, procedures and culture.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1639174326326-6e2ef8d8ae39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    image: "products/npe.png",
     tag1: "#metaverseevents",
     tag2: "#virtualconferences",
     title: "Metaverse Event Hosting",
     body: "Our platform enables businesses to host virtual events and conferences, allowing for seamless participation and engagement.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1588590560438-5e27fe3f6b71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1128&q=80",
+    image: "products/pdm.png",
     tag1: "#productdemonstrations",
     tag2: "#virtualshowcase",
     title: "Product Demonstrations",
     body: "Our virtual environments enable businesses to showcase their products and services in a highly interactive and engaging way.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1538388149542-5e24932d11a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+    image: "products/mrt.png",
     tag1: "#metaverseshopping",
     tag2: "#virtualstores",
     title: "Metaverse Retail",
     body: "Our platform allows businesses to create virtual stores, enabling customers to shop and interact with products in a virtual environment",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1554474051-0256b98c36f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+    image: "products/wcm.png",
     tag1: "#virtualwatercooler",
     tag2: "#teamcollaboration",
     title: "Water Cooler Meetings",
     body: "Our virtual environments allow teams to meet and collaborate in a casual and informal setting, fostering a sense of community and engagement.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1563372590-aa093423dcbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1022&q=80",
+    image: "products/dvz.png",
     tag1: "#datavisualization",
     tag2: "#virtualrealitydata",
     title: "Reality-based data visualization",

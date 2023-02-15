@@ -5,11 +5,18 @@ import Button from "./Button";
 const Background = () => {
   return (
     <>
-      <img className={styles.landing_bg} src="background/background.png" />
+      <video
+        className={styles.landing_bg}
+        autoPlay
+        muted
+        playsInline
+        loop
+        src="background/web.mp4"
+      />
 
       <div className={styles.top_flex}>
         <a href="/" className={styles.logo}>
-          <img src="background/logo.png" alt="Neodonya" />
+          <img src="background/logo.svg" alt="Neodonya" />
         </a>
         <Button text="Contact Us" />
       </div>
