@@ -53,7 +53,7 @@ const FAQs = () => {
     setFAQs(TEMP_FAQS);
   };
 
-  const toggle = (i) => {
+  const toggle = i => {
     const TEMP_DISP = [...display];
     TEMP_DISP[i] = open[i]
       ? `${styles.faq_body} ${styles.no}`

@@ -135,6 +135,7 @@
 @media screen and (max-width: 900px) {
   .cap_wrapper {
     padding: 5rem;
+    top: 0;
     text-align: center;
   }
 
@@ -176,7 +177,6 @@
 
 @media screen and (max-width: 750px) {
   .cap_wrapper {
-    top: 2rem;
     padding: 6rem 4rem;
   }
 

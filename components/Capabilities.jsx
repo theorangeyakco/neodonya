@@ -44,7 +44,7 @@ const Capabilities = () => {
     fillData(1);
   }, []);
 
-  const fillData = (mid) => {
+  const fillData = mid => {
     let one, two, three;
     switch (mid) {
       case 0:

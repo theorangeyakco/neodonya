@@ -4,10 +4,7 @@ import styles from "../styles/soln.module.css";
 const TextArea = ({ ph }) => {
   return (
     <div className={styles.text_wrapper}>
-      <div className={styles.text_shadow} 
-        id="t1"
-      
-      />
+      <div className={styles.text_shadow} id="t1" />
       <textarea
         placeholder={ph}
         rows="4"

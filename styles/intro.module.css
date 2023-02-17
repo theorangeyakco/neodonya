@@ -1,9 +1,8 @@
 .arrow_wrapper {
   width: 100vw;
   overflow: hidden;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
   padding: 3rem;
 }
 
@@ -13,17 +12,16 @@
   background-position-x: left;
   background-position-y: top;
   background-size: cover;
-
-  margin: -4rem -3rem;
-  width: 40%;
+  margin: -4rem;
   height: 24rem;
 }
 
 .arrows_text {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.2rem;
   display: flex;
   flex-direction: column;
+  transform: translateY(-0.5rem);
 }
 
 .arrows_text span {
@@ -38,63 +36,90 @@
 
 .text {
   width: max-content;
+  align-items: center;
+  display: flex;
+  gap: 10px;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1700px) {
   .arrows_text {
-    margin: 2rem;
+    margin-left: 2rem;
+    font-size: 2.4rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .arrows_text {
-    font-size: 2rem;
-    margin-top: 1rem;
+  .arrow_wrapper {
+    grid-template-columns: 4fr 1fr;
+    padding: 2rem 3rem;
   }
 
-  .arrows {
-    width: 50%;
-    margin: -6rem;
+  .arrows_text {
+    font-size: 1.6rem;
+    transform: translateY(1rem);
   }
 }
 
 @media screen and (max-width: 900px) {
-  .arrows {
-    width: 45%;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .arrows {
-    display: none;
-  }
-
   .arrow_wrapper {
-    padding: 0;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    width: auto;
+    transform: none;
+    padding: 1rem 2rem;
+    padding-bottom: 3rem;
   }
 
   .arrows_text {
-    margin-top: 2rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .gradient {
+    max-width: 84vw;
+  }
+
+  .arrows {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hide {
+    display: none;
   }
 
   .text {
-    width: 100%;
-    text-align: center;
+    gap: 0;
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width: 500px) {
+  .arrow_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem 2rem 2rem;
+    margin: -1rem 0;
+  }
+
+  .gradient {
+    max-width: 110vw;
+  }
+
   .arrows_text {
-    margin-top: 1.5rem;
-    font-size: 1.2rem;
+    scale: 0.8;
   }
 }
 
 @media screen and (max-width: 380px) {
   .arrows_text {
-    margin-top: 1rem;
-    font-size: 1rem;
+    scale: 0.7;
+  }
+
+  .gradient {
+    max-width: 120vw;
   }
 }
