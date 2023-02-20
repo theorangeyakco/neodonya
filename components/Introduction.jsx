@@ -225,7 +225,56 @@ const Introduction = () => {
   }, [iValue]);
 
   // SELECT STYLES
-  const colourStyles = {
+  const colourStyles1 = {
+    control: base => ({
+      ...base,
+      border: 0,
+      borderBottom: "1px solid black",
+      backgroundColor: "transparent",
+      cursor: "pointer",
+      borderRadius: 0,
+      color: "#bf0aff",
+      boxShadow: "none",
+    }),
+    option: (styles, { isSelected }) => ({
+      ...styles,
+      backgroundColor: isSelected ? "#51718d" : "white",
+      fontSize: "0.9rem",
+      textAlign: "left",
+      cursor: "pointer",
+      borderBottom: "1px solid black",
+      background: "linear-gradient(86.63deg, #bf0aff, #940bff 92.43%, #1d26ff)",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+
+      ":active": {
+        ...styles[":active"],
+        backgroundColor: "",
+      },
+    }),
+    menuList: base => ({
+      ...base,
+      maxHeight: "160px",
+    }),
+    dropdownIndicator: base => ({
+      ...base,
+      display: "none",
+    }),
+    noOptionsMessage: base => ({
+      ...base,
+      fontSize: "1rem",
+    }),
+    indicatorSeparator: base => ({
+      ...base,
+      display: "none",
+    }),
+    placeholder: defaultStyles => ({
+      ...defaultStyles,
+      color: "",
+    }),
+  };
+
+  const colourStyles2 = {
     control: base => ({
       ...base,
       border: 0,
@@ -278,33 +327,32 @@ const Introduction = () => {
     <div className={styles.arrow_wrapper}>
       <div className={styles.arrows_text}>
         <div className={styles.text}>
-          <span>I am in</span>
+          <span>I am in the</span>
           <Select
             id="industry"
-            placeholder="an awesome"
+            placeholder="select space"
             options={industry}
             isSearchable={true}
-            styles={colourStyles}
+            styles={colourStyles1}
             onChange={val => setIValue(val.value)}
           />
-          <span className={styles.hide}>space</span>
         </div>
 
         <div className={styles.text}>
           <span>and am interested in</span>
           <Select
             id="work"
-            placeholder="an awesome"
+            placeholder="select domain"
             ref={selectRef}
             options={work}
             isSearchable={true}
-            styles={colourStyles}
+            styles={colourStyles2}
             noOptionsMessage={() => "pick your space"}
             onChange={val =>
               setHelp(
                 val
                   ? WORK[iValue][val.value][1] + "."
-                  : "proving my awesomeness!"
+                  : "using metaverse to transform my industry"
               )
             }
           />
