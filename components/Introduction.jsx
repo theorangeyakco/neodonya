@@ -202,7 +202,6 @@ const Introduction = () => {
     [industry, setIndustry] = useState([]);
 
   const [iValue, setIValue] = useState(),
-    [disabled, setDisabled] = useState(true),
     [help, setHelp] = useState("");
 
   useEffect(() => {
@@ -253,6 +252,10 @@ const Introduction = () => {
         backgroundColor: "",
       },
     }),
+    menuList: base => ({
+      ...base,
+      maxHeight: "100px",
+    }),
     dropdownIndicator: base => ({
       ...base,
       display: "none",
@@ -274,7 +277,7 @@ const Introduction = () => {
   return (
     <div className={styles.arrow_wrapper}>
       <div className={styles.arrows_text}>
-        <p className={styles.text}>
+        <div className={styles.text}>
           <span>I am in</span>
           <Select
             id="industry"
@@ -285,9 +288,9 @@ const Introduction = () => {
             onChange={val => setIValue(val.value)}
           />
           <span className={styles.hide}>space</span>
-        </p>
+        </div>
 
-        <p className={styles.text}>
+        <div className={styles.text}>
           <span>and am interested in</span>
           <Select
             id="work"
@@ -305,15 +308,15 @@ const Introduction = () => {
               )
             }
           />
-        </p>
+        </div>
 
-        <p className={styles.text}>
+        <div className={styles.text}>
           <span>domain. Neodonya can help me in</span>
-        </p>
+        </div>
 
-        <p className={styles.text} style={{ maxWidth: "100%" }}>
+        <div className={styles.text} style={{ maxWidth: "100%" }}>
           <span className={styles.gradient}>{help}</span>
-        </p>
+        </div>
       </div>
 
       <div className={styles.arrows} />

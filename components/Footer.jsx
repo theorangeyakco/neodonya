@@ -39,8 +39,8 @@ const Footer = () => {
           </div>
           <div className={styles.point}>
             <img src="footer/mail.svg" />
-            <a href="mailto:partnerships@xplorro.com">
-              partnerships@xplorro.com
+            <a href="mailto:contact@neodonya.com">
+              contact@neodonya.com
             </a>
           </div>
           <div className={styles.point}>
@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={styles.box}>
+        {/* <div className={styles.box}>
           <div className={styles.title}>Products</div>
           <a className={styles.point}>Onboarding</a>
           <a className={styles.point}>Metaverse Meeting</a>
@@ -71,7 +71,7 @@ const Footer = () => {
           <a className={styles.point}>Metaverse Meeting</a>
           <a className={styles.point}>Warehouse Training</a>
           <a className={styles.point}>Custom Products</a>
-        </div>
+        </div> */}
       </div>
 
       <div className={styles.footer_bottom}>
