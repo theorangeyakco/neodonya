@@ -86,12 +86,14 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px), (min-height: 1000px) {
   .landing_bg {
     width: 100vw;
     min-height: 0;
   }
+}
 
+@media screen and (max-width: 900px) {
   .top_flex {
     padding: 1rem;
     width: calc(100vw - 2rem);

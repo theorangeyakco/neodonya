@@ -37,63 +37,37 @@ const FAQs = () => {
     [open, setOpen] = useState([]),
     [display, setDisplay] = useState([]);
 
-  const init = () => {
-    const TEMP_FAQS = [];
-    for (let i = 0; i < STORE.length; i++)
-      TEMP_FAQS.push(
-        <div key={i} className={styles.faq}>
-          <div onClick={() => toggle(i)} className={styles.faq_head}>
-            <button className={styles.open}>“</button>
-            <div className={styles.question}>{STORE[i].head}</div>
-          </div>
-          <div className={display[i]}>{STORE[i].body}</div>
-        </div>
-      );
-
-    setFAQs(TEMP_FAQS);
-  };
-
-  const toggle = i => {
-    const TEMP_DISP = [...display];
-    TEMP_DISP[i] = open[i]
-      ? `${styles.faq_body} ${styles.no}`
-      : `${styles.faq_body} ${styles.yes}`;
-
-    const TEMP_OPEN = [...open];
-    TEMP_OPEN[i] = !TEMP_OPEN[i];
-
-    setOpen(TEMP_OPEN);
-    setDisplay(TEMP_DISP);
-  };
-
   useEffect(() => {
-    const TEMP_FAQS = [];
-    const TEMP_OPEN = [];
-    const TEMP_DISP = [];
-
-    for (let i = 0; i < STORE.length; i++) {
-      TEMP_OPEN[i] = false;
-      TEMP_DISP[i] = `${styles.faq_body} ${styles.no}`;
-
-      TEMP_FAQS.push(
-        <div key={i} onClick={() => toggle(i)} className={styles.faq}>
-          <div className={styles.faq_head}>
-            <button className={styles.open}>“</button>
-            <div className={styles.question}>{STORE[i].head}</div>
-          </div>
-          <div className={display[i]}>{STORE[i].body}</div>
-        </div>
-      );
-    }
-
-    setFAQs(TEMP_FAQS);
-    setOpen(TEMP_OPEN);
-    setDisplay(TEMP_DISP);
+    setOpen(STORE.map(e => false));
+    setDisplay(STORE.map(e => `${styles.faq_body} ${styles.no}`));
   }, []);
 
   useEffect(() => {
-    init();
+    setFAQs(
+      STORE.map((e, i) => (
+        <div key={i} onClick={() => toggle(i)} className={styles.faq}>
+          <div className={styles.faq_head}>
+            <button className={styles.open}>“</button>
+            <div className={styles.question}>{e.head}</div>
+          </div>
+          <div className={display[i]}>{e.body}</div>
+        </div>
+      ))
+    );
   }, [display]);
+
+  const toggle = index =>
+    setOpen(STORE.map((e, i) => (i == index ? !open[i] : open[i])));
+
+  useEffect(() => {
+    setDisplay(
+      STORE.map((e, i) =>
+        open[i]
+          ? `${styles.faq_body} ${styles.yes}`
+          : `${styles.faq_body} ${styles.no}`
+      )
+    );
+  }, [open]);
 
   return (
     <div className={styles.faq_wrapper}>

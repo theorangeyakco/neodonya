@@ -129,7 +129,6 @@
 
   .faqs {
     gap: 3rem;
-    /* min-height: 700px; */
   }
 }
 
@@ -143,6 +142,10 @@
   .title {
     font-size: 2.2rem;
   }
+
+  .faq {
+    gap: 1rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -153,21 +156,40 @@
   .faqs {
     width: calc(100vw - 6rem);
   }
+
+  .faq_head {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .title {
     font-size: 2rem;
   }
+
+  .faq {
+    gap: 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .question {
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+
+  .open {
+    margin-top: 8px;
+    margin-bottom: -8px;
+    font-size: 70px;
+    line-height: 60px;
   }
 
   .yes {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .faq_body {
+    font-size: 0.9rem;
   }
 
   .title {
@@ -175,14 +197,20 @@
   }
 }
 
+@media screen and (max-width: 420px) {
+  .faq_wrapper {
+    padding: 5rem 2rem;
+  }
+
+  .faqs {
+    width: calc(100vw - 4rem);
+  }
+}
+
 @media screen and (max-width: 380px) {
   .faqs,
   .faq_wrapper {
     gap: 1rem;
-  }
-
-  .faq {
-    padding-bottom: 0rem;
   }
 
   .faq_wrapper {
