@@ -10,10 +10,19 @@ const Solution = () => {
       <img className={styles.purple} src="solutions/purple.png" />
       <div className={styles.title}>Looking for a custom solution?</div>
 
-      <form onSubmit={e => e.preventDefault()} className={styles.soln_form}>
-        <Input ph="what's your name?" />
-        <Input ph="enter your email address" />
-        <TextArea ph="send us a message.." />
+      <form
+        action="https://formspree.io/f/mjvdwwop"
+        method="POST"
+        className={styles.soln_form}
+      >
+        <Input req={true} type="text" name="name" ph="what's your name?" />
+        <Input
+          req={true}
+          type="email"
+          name="email"
+          ph="enter your email address"
+        />
+        <TextArea name="message" ph="send us a message.." />
         <Button text="Submit" />
       </form>
     </div>
