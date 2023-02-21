@@ -18,7 +18,11 @@ const Background = () => {
         <a href="/" className={styles.logo}>
           <img src="background/logo.svg" alt="Neodonya" />
         </a>
+
+        <a href="#contact">
+
         <Button text="Contact Us" />
+        </a>
       </div>
     </>
   );

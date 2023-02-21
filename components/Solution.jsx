@@ -6,7 +6,7 @@ import TextArea from "./TextArea";
 
 const Solution = () => {
   return (
-    <div className={styles.soln_wrapper}>
+    <div id="contact" className={styles.soln_wrapper}>
       <img className={styles.purple} src="solutions/purple.png" />
       <div className={styles.title}>Looking for a custom solution?</div>
 

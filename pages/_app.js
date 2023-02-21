@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <React.Fragment>
       <Head>
-        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <title>Neodonya | Building Virtual Worlds in the Metaverse</title>
         <meta
           name="viewport"

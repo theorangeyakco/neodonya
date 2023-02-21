@@ -327,7 +327,9 @@ const Introduction = () => {
     <div className={styles.arrow_wrapper}>
       <div className={styles.arrows_text}>
         <div className={styles.text}>
-          <span>I am in the</span>
+          <span>
+            I am in <span className={styles.hide}>the</span>
+          </span>
           <Select
             id="industry"
             placeholder="select space"
@@ -336,6 +338,7 @@ const Introduction = () => {
             styles={colourStyles1}
             onChange={val => setIValue(val.value)}
           />
+          <span className={styles.hide}>space</span>
         </div>
 
         <div className={styles.text}>
