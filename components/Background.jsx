@@ -20,8 +20,7 @@ const Background = () => {
         </a>
 
         <a href="#contact">
-
-        <Button text="Contact Us" />
+          <Button text="Contact Us" />
         </a>
       </div>
     </>

@@ -258,7 +258,7 @@ const Introduction = () => {
     }),
     dropdownIndicator: base => ({
       ...base,
-      display: "none",
+      color: "",
     }),
     noOptionsMessage: base => ({
       ...base,
@@ -307,7 +307,7 @@ const Introduction = () => {
     }),
     dropdownIndicator: base => ({
       ...base,
-      display: "none",
+      color: "",
     }),
     noOptionsMessage: base => ({
       ...base,
@@ -327,12 +327,10 @@ const Introduction = () => {
     <div className={styles.arrow_wrapper}>
       <div className={styles.arrows_text}>
         <div className={styles.text}>
-          <span>
-            I am in <span className={styles.hide}>the</span>
-          </span>
+          <span>I am in</span>
           <Select
             id="industry"
-            placeholder="select space"
+            placeholder="select"
             options={industry}
             isSearchable={true}
             styles={colourStyles1}
@@ -345,7 +343,7 @@ const Introduction = () => {
           <span>and am interested in</span>
           <Select
             id="work"
-            placeholder="select domain"
+            placeholder="select"
             ref={selectRef}
             options={work}
             isSearchable={true}
@@ -362,7 +360,9 @@ const Introduction = () => {
         </div>
 
         <div className={styles.text}>
-          <span>domain. Neodonya can help me in</span>
+          <span>
+            <span className={styles.hide}>domain.</span> Neodonya can help me in
+          </span>
         </div>
 
         <div className={styles.text} style={{ maxWidth: "100%" }}>

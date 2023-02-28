@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/soln.module.css";
 
-const Input = ({req, type, name, ph }) => {
+const Input = ({ req, type, name, ph }) => {
   return (
     <div className={styles.text_wrapper}>
       <div className={styles.text_shadow} />

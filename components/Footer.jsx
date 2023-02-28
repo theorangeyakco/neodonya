@@ -39,9 +39,7 @@ const Footer = () => {
           </div>
           <div className={styles.point}>
             <img src="footer/mail.svg" />
-            <a href="mailto:contact@neodonya.com">
-              contact@neodonya.com
-            </a>
+            <a href="mailto:contact@neodonya.com">contact@neodonya.com</a>
           </div>
           <div className={styles.point}>
             <img src="footer/phone.svg" />
