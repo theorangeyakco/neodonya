@@ -20,7 +20,7 @@ const PRODUCTS = [
     image: "products/eob.png",
     tag1: "#employeeonboarding",
     tag2: "#virtualonboarding",
-    title: "Employee Onboaring",
+    title: "Employee Onboarding",
     body: "Our virtual onboarding program allows new employees to quickly familiarize themselves with company policies, procedures and culture.",
   },
   {
