@@ -8,12 +8,12 @@ function MyApp({ Component, pageProps }) {
     <React.Fragment>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <title>Neodonya | Building Virtual Worlds in the Metaverse</title>
+        <title>Neodonya | Where business meets Metaverse</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <meta name="title" content="Neodonya | Building Virtual Worlds in the Metaverse"/>
+        <meta name="title" content="Neodonya | Where business meets Metaverse"/>
 <meta name="description" content="Neodonya is a leading metaverse company that specializes in building virtual worlds for various industries. Our team of experts creates immersive and interactive environments for use cases such as employee onboarding, warehouse training, and product demonstrations.
 
 We understand that each client has unique needs, and our virtual environments are tailored to meet your specific business objectives. Our cutting-edge technologies ensure that we create high-quality and engaging metaverse solutions.
@@ -24,7 +24,7 @@ Neodonya is a leading metaverse company that builds immersive virtual worlds for
 
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://neodonya.com"/>
-<meta property="og:title" content="Neodonya | Building Virtual Worlds in the Metaverse"/>
+<meta property="og:title" content="Neodonya | Where business meets Metaverse"/>
 <meta property="og:description" content="Neodonya is a leading metaverse company that specializes in building virtual worlds for various industries. Our team of experts creates immersive and interactive environments for use cases such as employee onboarding, warehouse training, and product demonstrations.
 
 We understand that each client has unique needs, and our virtual environments are tailored to meet your specific business objectives. Our cutting-edge technologies ensure that we create high-quality and engaging metaverse solutions.
@@ -36,7 +36,7 @@ Neodonya is a leading metaverse company that builds immersive virtual worlds for
 
 <meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:url" content="https://neodonya.com"/>
-<meta property="twitter:title" content="Neodonya | Building Virtual Worlds in the Metaverse"/>
+<meta property="twitter:title" content="Neodonya | Where business meets Metaverse"/>
 <meta property="twitter:description" content="Neodonya is a leading metaverse company that specializes in building virtual worlds for various industries. Our team of experts creates immersive and interactive environments for use cases such as employee onboarding, warehouse training, and product demonstrations.
 
 We understand that each client has unique needs, and our virtual environments are tailored to meet your specific business objectives. Our cutting-edge technologies ensure that we create high-quality and engaging metaverse solutions.
