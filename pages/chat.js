@@ -1,5 +1,7 @@
-import { Unity, useUnityContext } from "react-unity-webgl";
+// import { Unity, useUnityContext } from "react-unity-webgl";
 import Footer from "../components/Footer";
+import dynamic from 'next/dynamic'
+
 
 // var config = {
 //     dataUrl: buildUrl + "/v0.1.0.data",
@@ -13,30 +15,16 @@ import Footer from "../components/Footer";
 //     showBanner: unityShowBanner,
 //   };
 
-const Chat = () => {
-    const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
-        loaderUrl: "glbuild/v0.1.0.loader.js",
-        dataUrl: "glbuild/v0.1.0.data",
-        frameworkUrl: "glbuild/v0.1.0.framework.js",
-        codeUrl: "glbuild/v0.1.0.wasm",
-        symbolsUrl: "glbuild/v0.1.0.symbols.json",
-        companyName: "Tadpul Technology",
-        productName: "TadpulAvatars",
-        productVersion: "0.1",
-        // showBanner: unityShowBanner,
-      });
+const ChatC = dynamic(() => import('../components/ChatC').then((mod) => mod.ChatC))
+
+const ChatS = () => {
+
   return (
-    <div style={{padding: "25px"}}>
-        <h1 style={{color: "black"}}>Chat</h1>
-        <div>
-            {!isLoaded && (
-                <p>Loading Application... {Math.round(loadingProgression * 100)}%</p>
-            )}
-                <Unity unityProvider={unityProvider} style={{ width: 800, height: 600, border: 'solid black 1px' }} />
-        </div>
+        <>
+        <ChatC />
       <Footer />
-    </div>
+      </>
   );
 };
 
-export default Chat;
+export default ChatS;
