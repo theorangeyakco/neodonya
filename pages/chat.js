@@ -14,7 +14,7 @@ import Footer from "../components/Footer";
 //   };
 
 const Chat = () => {
-    const { unityProvider } = useUnityContext({
+    const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
         loaderUrl: "glbuild/v0.1.0.loader.js",
         dataUrl: "glbuild/v0.1.0.data",
         frameworkUrl: "glbuild/v0.1.0.framework.js",
@@ -26,11 +26,16 @@ const Chat = () => {
         // showBanner: unityShowBanner,
       });
   return (
-    <>
-        <h1>Chat</h1>
-        <Unity id={1} unityProvider={unityProvider} />
+    <div style={{padding: "25px"}}>
+        <h1 style={{color: "black"}}>Chat</h1>
+        <div>
+            {!isLoaded && (
+                <p>Loading Application... {Math.round(loadingProgression * 100)}%</p>
+            )}
+                <Unity unityProvider={unityProvider} style={{ width: 800, height: 600, border: 'solid black 1px' }} />
+        </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

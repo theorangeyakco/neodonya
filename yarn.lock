@@ -1575,6 +1575,11 @@ next@^12.2.5, next@>=10.2.0:
     "@next/swc-win32-ia32-msvc" "12.3.4"
     "@next/swc-win32-x64-msvc" "12.3.4"
 
+nextjs-unity-webgl@^8.6.0:
+  version "8.6.0"
+  resolved "https://registry.npmjs.org/nextjs-unity-webgl/-/nextjs-unity-webgl-8.6.0.tgz"
+  integrity sha512-xxgZQ6qBs/g9k2kSlOh49UKR4Zpvnunz2lFUEUivgwWblK2N6V3wYlSWHypHegxnr1lJbzYWDahm0uvPDAv0Aw==
+
 object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
