@@ -23,7 +23,7 @@ const ChatS = () => {
   return (
     <>
       <ChatC />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
