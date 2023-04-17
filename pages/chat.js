@@ -1,7 +1,6 @@
 // import { Unity, useUnityContext } from "react-unity-webgl";
 import Footer from "../components/Footer";
-import dynamic from 'next/dynamic'
-
+import dynamic from "next/dynamic";
 
 // var config = {
 //     dataUrl: buildUrl + "/v0.1.0.data",
@@ -15,15 +14,17 @@ import dynamic from 'next/dynamic'
 //     showBanner: unityShowBanner,
 //   };
 
-const ChatC = dynamic(() => import('../components/ChatC').then((mod) => mod.ChatC))
+const ChatC = dynamic(() => import("../components/ChatC"), {
+  ssr: false,
+  loading: () => <p>Loading...</p>,
+});
 
 const ChatS = () => {
-
   return (
-        <>
-        <ChatC />
-      <Footer />
-      </>
+    <>
+      <ChatC />
+      {/* <Footer /> */}
+    </>
   );
 };
 
