@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Introduction from "../components/Introduction";
 import Product from "../components/Products";
 import Solution from "../components/Solution";
+import StickyButtonModal from "../components/StickyButtonModal";
 
 const Main = () => {
   return (
@@ -17,6 +18,7 @@ const Main = () => {
       <Solution />
       <Blogs />
       <FAQs />
+      <StickyButtonModal iframeSrc={"https://neodonyademo.web.app"} />
       <Footer />
     </>
   );
