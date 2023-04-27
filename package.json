@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "framer-motion": "^10.12.4",
     "next": "^12.2.5",
     "nextjs-unity-webgl": "^8.6.0",
     "prettier": "^2.8.4",

@@ -22,8 +22,8 @@ const StickyButtonModal = ({ iframeSrc }) => {
         onClick={openModal}
         style={{
           position: "fixed",
-          bottom: "50px",
-          right: "50px",
+          bottom: "10vh",
+          right: "10vw",
           zIndex: 1000,
         }}
       >
