@@ -3,26 +3,9 @@ import Head from "next/head";
 
 import "../styles/global.css";
 import "../styles/chat.css";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", function () {
-        navigator.serviceWorker.register("/chat/sw.js").then(
-          function (registration) {
-            console.log(
-              "Service Worker registration successful with scope: ",
-              registration.scope
-            );
-          },
-          function (err) {
-            console.log("Service Worker registration failed: ", err);
-          }
-        );
-      });
-    }
-  }, []);
-
   return (
     <React.Fragment>
       <Head>
@@ -87,7 +70,9 @@ Neodonya is a leading metaverse company that builds immersive virtual worlds for
         ></meta>
       </Head>
 
-      <Component {...pageProps} />
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </React.Fragment>
   );
 }
