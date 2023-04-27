@@ -1,4 +1,4 @@
-import { useMediaQuery } from "@chakra-ui/react";
+import useMediaQuery from "../lib/use-media-query";
 import Background from "../components/Background";
 import Blogs from "../components/Blogs";
 import Capabilities from "../components/Capabilities";
@@ -11,7 +11,7 @@ import StickyButtonModal from "../components/StickyButtonModal";
 import DesktopChat from "../components/DesktopChat";
 
 const Main = () => {
-  const [isPhone] = useMediaQuery("(max-width: 600px)");
+  const isPhone = useMediaQuery("(max-width: 600px)");
   return (
     <>
       <Background />

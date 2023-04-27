@@ -3,7 +3,6 @@ import Head from "next/head";
 
 import "../styles/global.css";
 import "../styles/chat.css";
-import { ChakraProvider } from "@chakra-ui/react";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -70,9 +69,7 @@ Neodonya is a leading metaverse company that builds immersive virtual worlds for
         ></meta>
       </Head>
 
-      <ChakraProvider>
-        <Component {...pageProps} />
-      </ChakraProvider>
+      <Component {...pageProps} />
     </React.Fragment>
   );
 }
